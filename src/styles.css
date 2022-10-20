@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+/*@import url("../node_modules/bootstrap/dist/css/bootstrap.css");*/
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap");
+
+@import "~bootstrap/dist/css/bootstrap.css";
+/*@import url("../node_modules/bootstrap/dist/css/font-awesome.min.css");*/
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css");
+@import url( "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css.map");
+
+/* @import url("css/style.css");
+@import url("css/responsive.css");*/

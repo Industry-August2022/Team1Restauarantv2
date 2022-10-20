@@ -1,0 +1,36 @@
+
+    <link rel="stylesheet" type="text/css" href="login.component.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+
+<body>
+	<div class="main">
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form>
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="text" name="customerName" placeholder="User Name" required="" >
+					<input type="email" name="email" placeholder="Email" required="">
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<a routerLink="/delivery"><input type="submit" value="Sign Up" /></a>
+				</form>
+			</div>
+
+		<div class="login">
+
+				<form #newCustomer = "ngForm" (ngSubmit)="process(newCustomer.value)">
+
+				  <td><input type="text" name="customerName" placeholder="Email" required="" ngModel></td>
+
+				  <td><input type="text" name="address" placeholder="Password" required="" ngModel></td>
+
+				 <a><td><input type="submit" name="submitted"/></td></a>
+
+				</form>
+
+				</div>
+	</div>
+
+
+</body>
+

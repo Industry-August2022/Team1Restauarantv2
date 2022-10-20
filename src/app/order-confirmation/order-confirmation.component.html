@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    .thankyoumessage {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+  font-family: Garamond;
+
+}
+body {background-color: #b3f0ff;}
+.button {
+  border: none;
+  color: rgb(17, 2, 2);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+.button1 {
+  background-color: #84dff6;
+  color: black;
+  border: 2px solid #84dff6;
+  border-radius: 5px;
+}
+
+.button1:hover {
+  background-color: #397dfc;
+
+}
+</style>
+
+
+
+</head>
+<body>
+    <div class="thankyoumessage text-center">
+        <h1 class="display-3">Thank you for Logging In!</h1>
+        <p>Login Details: Your Name :{{customers[customers.length-1].customerName}},  Address: {{customers[customers.length-1].address}}</p>
+        <p class="lead" >Your Login confirmation number is: {{customers.length-1}}</p>
+
+
+        <p class="lead">Please check your email for further Login details.</p>
+
+
+        <p class="lead">
+          <a class="button button1" href=" " role="button">Back to homepage</a>
+        </p>
+      </div>
+</body>
+</html>
