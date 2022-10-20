@@ -1,15 +1,32 @@
-import { Component, OnInit } from '@angular/core';
+import {MenuComponent} from '../menu/menu.component';
+import { MatDialog } from '@angular/material/dialog';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-shopping-cart',
-  templateUrl: './shopping-cart.component.html',
-  styleUrls: ['./shopping-cart.component.css']
+  templateUrl: './shopping-cart.html',
+  styleUrls: ['./shopping-cart.css']
 })
-export class ShoppingCartComponent implements OnInit {
 
-  constructor() { }
+export class ShoppingCartComponent {
+  title = 'Browsing Restaurants';
+  obj: any;
+  constructor(private dialog:MatDialog )
+  {
 
-  ngOnInit(): void {
   }
+
+menu = [
+  {name:"Maya's Mediterranean",place:"Dallas",imageurl:"/assets/fseqknyvblex.webp"},
+  {name:"Raising Cane's",place:"Atlanta",imageurl:"/assets/OIP.jpg"},
+  {name:"KFC",place:"Tampa",imageurl:"/assets/R.jpg"},
+]
+
+showDialog(obj)
+{
+  this.dialog.open(MenuComponent,{data:{name:obj}});
+}
+
+
 
 }

@@ -1,0 +1,24 @@
+
+<mat-toolbar color="primary">
+    Restaurants Info.
+  </mat-toolbar>
+<div>
+  <mat-card  class="line" *ngFor="let m of menu">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{m.name}}</mat-card-title>
+      <mat-card-subtitle>{{m.place}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{m.imageurl}}" height="200px">
+    <mat-card-content>
+      <p>
+        Welcome
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="showDialog(m.name)">Menu</button>
+
+    </mat-card-actions>
+  </mat-card>
+
+</div>

@@ -1,0 +1,11 @@
+<mat-dialog-content>
+    Menu Of {{data.name}}
+    <ul>
+        <li *ngFor="let l of list">
+        {{l}}
+        </li>
+    </ul>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-button mat-dialog-close>Close</button>
+</mat-dialog-actions>

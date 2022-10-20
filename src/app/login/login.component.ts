@@ -15,6 +15,9 @@ process(newCustomer : {customerName:string,address:string}){
 this.cs.create(newCustomer);
 this.rt.navigate(['/orderconfirmation']);
 }
+shoppingCart(newCustomer){
+  this.rt.navigate(['/shopping-cart']);
+}
   ngOnInit(): void {
   }
 

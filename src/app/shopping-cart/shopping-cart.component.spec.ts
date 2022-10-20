@@ -1,6 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ShoppingCartComponent } from './shopping-cart.component';
+import {Component, Inject} from '@angular/core';
+import {MAT_DIALOG_DATA} from '@angular/material/dialog';
+
 
 describe('ShoppingCartComponent', () => {
   let component: ShoppingCartComponent;
